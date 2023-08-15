@@ -69,6 +69,15 @@ export class AppComponent implements OnInit, OnDestroy {
           },
           error: (err) => console.log(err)
         })
+    } else {
+      this.api.read('read-registration', 50, 0)
+      .pipe(
+        takeUntil(this.sub))
+      .subscribe({
+        next: (res) => this.sharing.sendDataSearching(res.data),
+        error: (err) => console.log(err)
+
+      })
     }
 
   }

@@ -44,7 +44,8 @@ export class FormRegistrationComponent implements OnInit , OnDestroy {
     .subscribe({
       next: (res)=> {
         this.sharing.sendData(res);
-        this.router.navigate(['/'])
+        setTimeout(() => { this.router.navigate(['/']) }, 3000)
+        
       },
       error: (err)=> {
         this.sharing.sendData(err)

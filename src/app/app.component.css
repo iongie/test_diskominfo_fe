@@ -1,7 +1,7 @@
 .notifikasi{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0.5rem;
+    left: 0.5rem;
     border: none;
     border-radius: 1rem;
     padding: 1rem;
