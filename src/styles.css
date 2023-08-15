@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@flaticon/flaticon-uicons/css/all/all";
+@font-face {
+    font-family: 'MyFont';
+    src: url('./assets/Inter/Inter.ttf');
+}
+
+:root {
+    --primary-01: #64aab9;
+    --primary-02: #00A8CC;
+    --primary-03: #04809c;
+    --secondary-01: #fbd3d3;
+    --secondary-02: #FF6464;
+    --secondary-03: #fb0707;
+    --tertiary-01: #F9FAFB; 
+    --tertiary-02: #D1D5DB; 
+    --tertiary-03: #6B7280;
+    --body-xs: 14px;
+    --body-sm: calc(var(--body-xs) + 2px);
+    --body-xl: calc(var(--body-xs) + 4px);
+    --display-xs: 24px;
+    --display-sm: calc(var(--display-xs) + 6px);
+    --display-xl: calc(var(--display-xs) + 16px);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: solid red 1px; */
+    font-family: 'MyFont', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: var(--tertiary-01);
+}

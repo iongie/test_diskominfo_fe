@@ -1,0 +1,26 @@
+<section class="form-registration">
+    <h4>Form Registrasi</h4>
+    <form [formGroup]="registrations" (ngSubmit)="onSubmit()">
+        <fieldset class="fieldset-dataDiri">
+            <legend>Data Diri</legend>
+
+            <label for="nama">nama</label>
+            <input type="text" name="name" id="name" formControlName="name" required>
+            <!-- <p *ngIf="registrations.controls['name'].hasError('required') && registrations.controls['name'].touched ">Input nama tidak boleh kosong!</p> -->
+            
+            <label for="nama">email</label>
+            <input type="text" name="email" id="email" formControlName="email" required>
+            <!-- <p *ngIf="registrations.controls['name'].hasError('required') && registrations.controls['name'].touched">Input nama tidak boleh kosong!</p>
+            <p *ngIf="registrations.controls['name'].errors?.['email'] && registrations.controls['name'].touched">Harus format email!</p> -->
+            
+            <label for="alamat">alamat</label>
+            <textarea name="alamat" id="alamat" formControlName="alamat" required></textarea>
+            <!-- <p *ngIf="registrations.controls['name'].hasError('required') && registrations.controls['name'].touched">Input nama tidak boleh kosong!</p> -->
+            
+        </fieldset>
+        <fieldset class="fieldset-button">
+            <button type="submit">daftar</button>
+            <button type="button" (click)="goBackToHome()">cancel</button>
+        </fieldset>
+    </form>
+</section>

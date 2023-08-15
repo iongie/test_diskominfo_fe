@@ -1,0 +1,97 @@
+:host {
+    width: 100%;
+}
+
+.form-registration {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-registration > form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-registration > h4 {
+    text-transform: capitalize;
+    font-size: var(--display-sm);
+}
+
+.form-registration > form > .fieldset-dataDiri {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    border-color: var(--primary-02);
+    background-color: white;
+}
+
+.form-registration > form > .fieldset-dataDiri > legend{
+    font-size: var(--display-xs);
+}
+
+.form-registration > form > .fieldset-dataDiri > p{
+    font-size: var(--body-sm);
+    color: var(--secondary-03);
+}
+
+.form-registration > form > .fieldset-dataDiri > label{
+    font-size: var(--body-sm);
+    text-transform: capitalize;
+}
+
+.form-registration > form > .fieldset-dataDiri > input[type="text"],
+.form-registration > form > .fieldset-dataDiri > textarea{
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid var(--tertiary-02);
+}
+
+.form-registration > form > .fieldset-button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border: none;
+    padding: 0 2rem 0 2rem;
+}
+
+.form-registration > form > .fieldset-button > button[type="submit"] {
+    text-transform: capitalize;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: var(--secondary-02);
+    color: white;
+    font-size: var(--body-sm);
+}
+
+.form-registration > form > .fieldset-button > button[type="button"] {
+    text-transform: capitalize;
+    border: 1px solid var(--tertiary-02);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: var(--tertiary-01);
+    color: black;
+    font-size: var(--body-sm);
+}
+
+.form-registration > form > .fieldset-button > button[type="submit"]:hover,
+.form-registration > form > .fieldset-button > button[type="button"]:hover{
+    background-color: var(--secondary-03);
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-registration > form > .fieldset-button {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+}
+

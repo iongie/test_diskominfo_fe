@@ -1,0 +1,22 @@
+<content class="article-registrations">
+    <aside class="aside-menu-registrations">
+        <div class="menu-registrations-left">
+            <div class="group-setting-menu-registrations">
+                <button class="button-menu-registrations" (click)="goToPageDaftar()"><i class="fi fi-br-plus"></i></button>
+            </div>
+            <button class="button-menu-registrations"  (click)="reload()"><i class="fi fi-br-refresh"></i></button>
+        </div>
+        <div class="menu-registrations-right">
+            <p>{{offset}}-{{offset+limit}} dari {{totalDataRegistrasi}}</p>
+            <button class="button-menu-registrations" [disabled]="disableReduce" (click)="reduce()"><i class="fi fi-rr-angle-small-left"></i></button>
+            <button class="button-menu-registrations" [disabled]="disableAdd" (click)="add()"><i class="fi fi-rr-angle-small-right"></i></button>
+        </div>
+    </aside>
+    <article class="registrations">
+        <section class="registrations-items" *ngFor="let registrasi of dataRegistrasi">
+            <h4>{{registrasi.name}}</h4>
+            <p>{{registrasi.email}}</p>
+            <p>{{registrasi.alamat}}</p>
+        </section>
+    </article>
+</content>
